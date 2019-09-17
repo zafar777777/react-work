@@ -1,10 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-
-
+setInterval( function() { 
+let clock= function() {
+	return <h2>{new Date().toLocaleTimeString()}</h2>
+}
 
 ReactDOM.render(
-	<h1>WELCOME TO REACT</h1>,
+
+	clock(),
 	document.getElementById('root')
 	);
+
+},1000);
